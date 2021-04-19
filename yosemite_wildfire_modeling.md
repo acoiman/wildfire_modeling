@@ -263,6 +263,8 @@ To run our fire simulation we need a fuel model defined by the USDA Forest Servi
 
 <strong>Table 2. Anderson Fuel Model Classes</strong> <br/>
 
+<p align="center">
+ 
 | Fuel class            | Description                    |
 | :-------------------  | :----------------------------- |
 | Grass and grass-dominated                              |
@@ -299,7 +301,7 @@ We will be redirected to the map viewer where we should click on the download ic
 
 In the form that appears enter the coordinates shown in the cell below and click on `Download Area`(Figure 4). Follow the instructions to download the data to your working directory.
 
-<strong>Figure 4. LANDFIRE Download Form</strong> </p>
+<p align="center"> <strong>Figure 4. LANDFIRE Download Form</strong> </p>
 <p align="center"> <img src="gisdata/yosemite/images/dds_5.png" width="300" align="center"> </p>
 
 
