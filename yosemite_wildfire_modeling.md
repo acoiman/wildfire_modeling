@@ -299,8 +299,8 @@ We will be redirected to the map viewer where we should click on the download ic
 
 In the form that appears enter the coordinates shown in the cell below and click on `Download Area`(Figure 4). Follow the instructions to download the data to your working directory.
 
-<center><strong>Figure 4. LANDFIRE Download Form</strong></center>
-<img src="gisdata/yosemite/images/dds_5.png" width="300" align="center">
+<strong>Figure 4. LANDFIRE Download Form</strong> </p>
+<p align="center"> <img src="gisdata/yosemite/images/dds_5.png" width="300" align="center"> </p>
 
 
 ```python
