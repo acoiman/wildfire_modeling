@@ -1,6 +1,6 @@
 # Wildfire Modeling in Yosemite National Park
 
-###### Abraham Coiman
+#### Abraham Coiman
 
 <p align="center"> <img src="gisdata/yosemite/images/fire-ynp.jpg" width="800" align="center"> </p>
 
