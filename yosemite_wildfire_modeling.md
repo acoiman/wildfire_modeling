@@ -120,7 +120,7 @@ Map
 
 <p align="center"> <strong>Figure 1. Yosemite National Park</strong> </p>
  
-<p align="center"> <img src="gisdata/yosemite/images/yosemite_wildfire_modeling_10_0.png" width="600" align="center"> </p>
+<p align="center"> <img src="gisdata/yosemite/images/yosemite_wildfire_modeling_10_0.png" width="800" align="center"> </p>
 
 According to Northern Rockies Coordination Center(n.d.): "100-Hour Fuel Moisture (100-hr FM) represents the modeled moisture content of dead fuels in the 1 to 3 inch diameter class. It can also be used as a very rough estimate of the average moisture content of the forest floor from three-fourths inch to four inches below the surface."
 
