@@ -262,29 +262,29 @@ geemap.ee_export_image_to_drive(image, description='landsat', folder='export', r
 To run our fire simulation we need a fuel model defined by the USDA Forest Service. In this case, we use the 13 Anderson Fire Behavior Fuel Model available at https://landfire.cr.usgs.gov/fbfm13.php . This model has 13 classes of fuel which vary in load, distribution, and particle size (Petrasova, et.al., 2018) (Table 2).
 
 <center><strong>Table 2. Anderson Fuel Model Classes</strong></center>
-<center>
- 
-| Fuel class            | Description                    |
-| :-------------------  | :----------------------------- |
-| Grass and grass-dominated                              |
-| 1                     | Short grass (1 foot)           |
-| 2                     | Timber (grass and understory)  |
-| 3                     | Tall grass (2.5 feet)          |
-| Chaparral and shrub fields                             |
-| 4                     | Chaparral (6 feet)             |
-| 5                     | Brush (2 feet)                 |
-| 6                     | Dormant brush, hardwood slash  |
-| 7                     | Southern rough                 |
-| Timber litter                                          |
-| 8                     | Closed timber litter           |
-| 9                     | Hardwood litter                |
-| 10                    | Timber (litter and understory) |
-| Slash                                                  |
-| 11                    | Light logging slash            |
-| 12                    | Medium logging slash           |
-| 13                    | Heavy logging slash            |
 
-</center>
+ 
+        | Fuel class            | Description                    |
+        | :-------------------  | :----------------------------- |
+        | Grass and grass-dominated                              |
+        | 1                     | Short grass (1 foot)           |
+        | 2                     | Timber (grass and understory)  |
+        | 3                     | Tall grass (2.5 feet)          |
+        | Chaparral and shrub fields                             |
+        | 4                     | Chaparral (6 feet)             |
+        | 5                     | Brush (2 feet)                 |
+        | 6                     | Dormant brush, hardwood slash  |
+        | 7                     | Southern rough                 |
+        | Timber litter                                          |
+        | 8                     | Closed timber litter           |
+        | 9                     | Hardwood litter                |
+        | 10                    | Timber (litter and understory) |
+        | Slash                                                  |
+        | 11                    | Light logging slash            |
+        | 12                    | Medium logging slash           |
+        | 13                    | Heavy logging slash            |
+
+
 
 To download our Fire Behavior Fuel Model we need to go to the LANDFIRE Data Distribution Site (DDS) select LF Remap tab and click on any US states (Figure 2)
 
