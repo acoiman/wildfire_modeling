@@ -262,7 +262,7 @@ geemap.ee_export_image_to_drive(image, description='landsat', folder='export', r
 To run our fire simulation we need a fuel model defined by the USDA Forest Service. In this case, we use the 13 Anderson Fire Behavior Fuel Model available at https://landfire.cr.usgs.gov/fbfm13.php . This model has 13 classes of fuel which vary in load, distribution, and particle size (Petrasova, et.al., 2018) (Table 2).
 
 <center><strong>Table 2. Anderson Fuel Model Classes</strong></center>
-
+<p align="center"> 
  
 | Fuel class            | Description                    |
 | :-------------------  | :----------------------------- |
@@ -284,7 +284,7 @@ To run our fire simulation we need a fuel model defined by the USDA Forest Servi
 | 12                    | Medium logging slash           |
 | 13                    | Heavy logging slash            |
 
-
+</p>
 
 To download our Fire Behavior Fuel Model we need to go to the LANDFIRE Data Distribution Site (DDS) select LF Remap tab and click on any US states (Figure 2)
 
