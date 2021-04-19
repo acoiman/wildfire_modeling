@@ -6,6 +6,8 @@
 
 <center>Source: https://abc7.com</center>
 
+<br>
+
 Wildfire modeling uses computational science to perform numerical simulations of fire events in order to understand and predict fire behavior. Wildfire modeling has many applications that encompass firefighter security, damage reduction, and protection of ecosystem services (Wikipedia. 2021).
 
 In this tutorial, we will show you how to model wildfire events using the [r.ros](https://grass.osgeo.org/grass78/manuals/r.ros.html) and [r.spread](https://grass.osgeo.org/grass78/manuals/r.spread.html) modules of  [GRASS GIS](https://grass.osgeo.org/). We will perform fire simulations in three areas in the [Yosemite National Park](https://www.nps.gov/yose/index.htm) located in California USA (Figure 1) during the summer season in 2020 (`from 2020-06-20 through 2020-09-22`). This tutorial has three main sections: **Getting Data, Importing Data, and Wildfire Simulation.**
