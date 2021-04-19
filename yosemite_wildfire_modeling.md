@@ -4,7 +4,7 @@
 
 <img src="gisdata/yosemite/images/fire-ynp.jpg" width="800" align="center">
 
-Source: https://abc7.com<br/>
+<p align="center">Source: https://abc7.com<\p><br/>
 
 Wildfire modeling uses computational science to perform numerical simulations of fire events in order to understand and predict fire behavior. Wildfire modeling has many applications that encompass firefighter security, damage reduction, and protection of ecosystem services (Wikipedia. 2021).
 
