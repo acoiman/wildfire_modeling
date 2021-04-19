@@ -293,11 +293,9 @@ To download our Fire Behavior Fuel Model we need to go to the LANDFIRE Data Dist
 <p align="center"> <img src="gisdata/yosemite/images/dds_1.png" width="400" align="center"> </p>
 
 We will be redirected to the map viewer where we should click on the download icon located on the map toolbar. In the map layer content, we should expand `Fuel Capable 2020` and `Surface and Canopy`. Next, we should select the layer named `us_200 13 Fire Behavior Fuel Models-Anderson (2020)` and click on the third icon at `Click one of the buttons above to start` (Figure 3).
-<br>
-<br>
 
-<center><strong>Figure 3. LANDFIRE  Map Viewer</strong></center>
-<img src="gisdata/yosemite/images/dds_4.png" width="1100" align="center">
+<p align="center"> <strong>Figure 3. LANDFIRE  Map Viewer</strong></center> </p>
+<p align="center"> <img src="gisdata/yosemite/images/dds_4.png" width="1100" align="center"> </p>
 
 In the form that appears enter the coordinates shown in the cell below and click on `Download Area`(Figure 4). Follow the instructions to download the data to your working directory.
 
