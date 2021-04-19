@@ -264,25 +264,25 @@ To run our fire simulation we need a fuel model defined by the USDA Forest Servi
 <center><strong>Table 2. Anderson Fuel Model Classes</strong></center>
 
  
-        | Fuel class            | Description                    |
-        | :-------------------  | :----------------------------- |
-        | Grass and grass-dominated                              |
-        | 1                     | Short grass (1 foot)           |
-        | 2                     | Timber (grass and understory)  |
-        | 3                     | Tall grass (2.5 feet)          |
-        | Chaparral and shrub fields                             |
-        | 4                     | Chaparral (6 feet)             |
-        | 5                     | Brush (2 feet)                 |
-        | 6                     | Dormant brush, hardwood slash  |
-        | 7                     | Southern rough                 |
-        | Timber litter                                          |
-        | 8                     | Closed timber litter           |
-        | 9                     | Hardwood litter                |
-        | 10                    | Timber (litter and understory) |
-        | Slash                                                  |
-        | 11                    | Light logging slash            |
-        | 12                    | Medium logging slash           |
-        | 13                    | Heavy logging slash            |
+| Fuel class            | Description                    |
+| :-------------------  | :----------------------------- |
+| Grass and grass-dominated                              |
+| 1                     | Short grass (1 foot)           |
+| 2                     | Timber (grass and understory)  |
+| 3                     | Tall grass (2.5 feet)          |
+| Chaparral and shrub fields                             |
+| 4                     | Chaparral (6 feet)             |
+| 5                     | Brush (2 feet)                 |
+| 6                     | Dormant brush, hardwood slash  |
+| 7                     | Southern rough                 |
+| Timber litter                                          |
+| 8                     | Closed timber litter           |
+| 9                     | Hardwood litter                |
+| 10                    | Timber (litter and understory) |
+| Slash                                                  |
+| 11                    | Light logging slash            |
+| 12                    | Medium logging slash           |
+| 13                    | Heavy logging slash            |
 
 
 
