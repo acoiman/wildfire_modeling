@@ -2,7 +2,7 @@
 
 ###### Abraham Coiman
 
-<img src="gisdata/yosemite/images/fire-ynp.jpg" width="800" align="center">
+<p align="center"> <img src="gisdata/yosemite/images/fire-ynp.jpg" width="800" align="center"> <\p>
 
 <p align="center">Source: https://abc7.com </p> <br/>
 
