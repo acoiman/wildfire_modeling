@@ -607,7 +607,7 @@ As we assume windy and topographically sharp conditions, r.ros module needs the 
 
 We'll use `v.surf.idw` module to derive the `moisture_100h` raster map from vector point (`samplefm100`)  by Inverse Distance Squared Weighting. To calculate `moisture_1h` raster we'll use the flowing expression :
 
-![formula](https://render.githubusercontent.com/render/math?math=moisture{\_}100h = moisture{\_}10h %2B1 \ = moisture{\_}1h %2B2 \ (GRASS Development Team, 2021))
+<p align="center"> <img src="https://render.githubusercontent.com/render/math?math=moisture{\_}100h \= moisture{\_}10h %2B1 \ = moisture{\_}1h %2B2 \ (GRASS Development Team, 2021))"> </p>
 
 `r.mapcal` module will be run to calculate `moisture_10h` from `moisture_100h` and `moisture_1h` from `moisture_10h`. 
 
@@ -1549,7 +1549,7 @@ imaging.images2gif.writeGifPillow('gisdata/yosemite/images/Animation_Sa_3_2.gif'
                                   images, duration=2, repeat=True)
 ```
 
-<img src="gisdata/yosemite/images/Animation_Sa_3_2.gif" width="400" align="center">
+<p align="center"> <img src="gisdata/yosemite/images/Animation_Sa_3_2.gif" width="400"> </p>
 
 According to the above output, our simulated fire spreads out towards the Yosemite valley generating a mega-fire. We can also see how our simulation avoids non-vegetated areas and goes over roads possibly due to the spotting effect. Total area of fire spread 72.54 km<sup>2</sup> .
 
