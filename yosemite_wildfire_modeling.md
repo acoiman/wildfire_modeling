@@ -1,10 +1,10 @@
 # Wildfire Modeling in Yosemite National Park
 
-###### Abraham Coiman
+#### Abraham Coiman
 
-<img src="gisdata/yosemite/images/fire-ynp.jpg" width="800" align="center">
+<p align="center"> <img src="gisdata/yosemite/images/fire-ynp.jpg" width="800"> </p>
 
-<center>Source: https://abc7.com</center>
+<p align="center"> Source: https://abc7.com </p>
 
 Wildfire modeling uses computational science to perform numerical simulations of fire events in order to understand and predict fire behavior. Wildfire modeling has many applications that encompass firefighter security, damage reduction, and protection of ecosystem services (Wikipedia. 2021).
 
@@ -12,13 +12,11 @@ In this tutorial, we will show you how to model wildfire events using the [r.ros
 
 To follow along this tutorial, please clone the repository located at: https://github.com/acoiman/wildfire_modeling.
 
-
-
 # 1. Getting Data
 
 Getting the data we need to feed our models could be a daunting activity. Sometimes, data are not readily available because they are sparse or dispersed over a wide range of sources. In this section, we will show you an approach to readily gather data for wildfire modeling purposes. Table 1 shows the data used in this tutorial.
 
-<center><strong>Table 1. Data used in this tutorial</strong></center>
+<p align="center"> <strong>Table 1. Data used in this tutorial</strong> </p>
 
 | **Data**                              | **Source**                                                   | **Link**                                                     |
 |:------------------------------------- |:------------------------------------------------------------ |:------------------------------------------------------------ |
@@ -34,7 +32,7 @@ Getting the data we need to feed our models could be a daunting activity. Someti
 
 ## 1.1 Loading Packages
 
-This tutorial assumes you are working in a Python environment with all the required packages. You also need to install the latest version of GRASS GIS and have an active GEE account. Our Python environment is based on a traditional Anaconda installation on Ubuntu 20.04, see details [here](https://docs.anaconda.com/anaconda/install/linux/).  You need to install the following packages that are not contained in Anaconda: **Geopandas, GEE Python API, eeconvert, geemap**. Installing these packages is beyond the scope of this tutorial, so Google them to find out how to install and configure these packages.  
+This tutorial assumes you are working in a [Juyter Notebook](https://jupyter.org/) and a [Python](https://www.python.org/) environment with all the required packages. You also need to install the latest version of [GRASS GIS](https://grass.osgeo.org/) and have an active [GEE](https://earthengine.google.com/) account. Our Python environment is based on an [Anaconda](https://www.anaconda.com/) installation on Ubuntu 20.04, see details [here](https://docs.anaconda.com/anaconda/install/linux/).  You need to install the following packages that are not contained in Anaconda: **Geopandas, GEE Python API, eeconvert, geemap**. Installing these packages is beyond the scope of this tutorial, so Google them to find out how to install and configure these packages.  
 
 Let's load all Python packages needed for this tutorial.
 
@@ -116,10 +114,9 @@ Map.addLayerControl()
 Map
 ```
 
-<center><strong>Figure 1. Yosemite National Park</strong></center>
+<p align="center"> <strong>Figure 1. Yosemite National Park</strong> </p>
 
-​    ![png](gisdata/yosemite/images/yosemite_wildfire_modeling_10_0.png)
-​    
+<p align="center"> <img src="gisdata/yosemite/images/yosemite_wildfire_modeling_10_0.png" width="800"> </p>
 
 According to Northern Rockies Coordination Center(n.d.): "100-Hour Fuel Moisture (100-hr FM) represents the modeled moisture content of dead fuels in the 1 to 3 inch diameter class. It can also be used as a very rough estimate of the average moisture content of the forest floor from three-fourths inch to four inches below the surface."
 
@@ -260,7 +257,7 @@ geemap.ee_export_image_to_drive(image, description='landsat', folder='export', r
 
 To run our fire simulation we need a fuel model defined by the USDA Forest Service. In this case, we use the 13 Anderson Fire Behavior Fuel Model available at https://landfire.cr.usgs.gov/fbfm13.php . This model has 13 classes of fuel which vary in load, distribution, and particle size (Petrasova, et.al., 2018) (Table 2).
 
-<center><strong>Table 2. Anderson Fuel Model Classes</strong></center>
+<strong>Table 2. Anderson Fuel Model Classes</strong> <br/>
 
 | Fuel class            | Description                    |
 | :-------------------  | :----------------------------- |
@@ -283,23 +280,23 @@ To run our fire simulation we need a fuel model defined by the USDA Forest Servi
 | 13                    | Heavy logging slash            |
 
 
+
 To download our Fire Behavior Fuel Model we need to go to the LANDFIRE Data Distribution Site (DDS) select LF Remap tab and click on any US states (Figure 2)
 
 
-<center><strong>Figure 2. LANDFIRE Data Distribution Site (DDS)</strong></center>
-<img src="gisdata/yosemite/images/dds_1.png" width="400" align="center">
+<p align="center"> <strong>Figure 2. LANDFIRE Data Distribution Site (DDS)</strong> </p>
+
+<p align="center"> <img src="gisdata/yosemite/images/dds_1.png" width="400"> </p>
 
 We will be redirected to the map viewer where we should click on the download icon located on the map toolbar. In the map layer content, we should expand `Fuel Capable 2020` and `Surface and Canopy`. Next, we should select the layer named `us_200 13 Fire Behavior Fuel Models-Anderson (2020)` and click on the third icon at `Click one of the buttons above to start` (Figure 3).
-<br>
-<br>
 
-<center><strong>Figure 3. LANDFIRE  Map Viewer</strong></center>
-<img src="gisdata/yosemite/images/dds_4.png" width="1100" align="center">
+<p align="center"> <strong>Figure 3. LANDFIRE  Map Viewer</strong> </p>
+<p align="center"> <img src="gisdata/yosemite/images/dds_4.png" width="1100"> </p>
 
 In the form that appears enter the coordinates shown in the cell below and click on `Download Area`(Figure 4). Follow the instructions to download the data to your working directory.
 
-<center><strong>Figure 4. LANDFIRE Download Form</strong></center>
-<img src="gisdata/yosemite/images/dds_5.png" width="300" align="center">
+<p align="center"> <strong>Figure 4. LANDFIRE Download Form</strong> </p>
+<p align="center"> <img src="gisdata/yosemite/images/dds_5.png" width="300"> </p>
 
 
 ```python
@@ -308,9 +305,7 @@ minx, miny, maxx, maxy = yosGDF.geometry.total_bounds
 (minx, miny, maxx, maxy)
 ```
 
-
     (-119.8863742093013, 37.4938205831069, -119.19951217057367, 38.18634574204428)
-
 
 
 # 2. Importing Data
@@ -332,7 +327,6 @@ os.environ['GISBASE'] = gisbase
 sys.path.append(os.path.join(gisbase, "etc", "python"))
 ```
 
-
 ```python
 # import grass gis package
 import grass.script as gs
@@ -343,7 +337,6 @@ from grass.pygrass.modules.shortcuts import raster as r, vector as v, general as
 from grass.pygrass.modules import Module as run_command
 import grass.imaging as imaging
 ```
-
 
 ```python
 # default font displays
@@ -453,7 +446,7 @@ script.run_command('v.import', input='gisdata/yosemite/shp/sa_3_3.shp', \
 
 Finally, we will create a Digital Elevation Model (DEM) from 1 arcsec NASADEM tiles. We import a DEM 30m spatial resolution from NASA DEM using the `r.in.nasadem` module. You need to register at https://urs.earthdata.nasa.gov/users/new in order to get a user and password that will be used as parameters for this module.
 
-<p style="color:#FF0000"><strong>This module should be executed in the shell because it does not work in Jupyter Notebook.</strong></p>
+<p style="color:red"> <strong>This module should be executed in the shell because it does not work in Jupyter Notebook.</strong> </p>
 
 
 ```python
@@ -461,8 +454,6 @@ Finally, we will create a Digital Elevation Model (DEM) from 1 arcsec NASADEM ti
 %%bash
 r.in.nasadem user="my_nasa_user" password="my_nasa_pw" output=dem memory=2000 resolution=30
 ```
-
-
 
 # 3. Wildfire Simulation
 
@@ -530,7 +521,7 @@ r.composite(red='dem.r', green='dem.g', blue='dem.b', output='dem.his');
 
 In the cell below, we set display modules to render into a file named map.png. You only need to execute this cell to render this map.
 
-<p style="color:#FF0000"><strong>To render other maps you must shut down the kernel and open again the notebook.</strong></p> 
+<p style="color:red"> <strong>To render other maps you must shut down the kernel and open again the notebook.</strong> </p> 
 
 
 ```python
@@ -571,26 +562,23 @@ script.run_command('d.legend.vect', at=(2,25), symbol_size=20)
 script.run_command('d.barscale', segment=10, length=30, units='kilometers', at=(40,5.0));
 ```
 
-<center><strong>Figure 5. Study Areas</strong></center>
-
-
 ```python
 # render the map
 Image(filename="map.png")
 ```
+<p align="center"> <strong>Figure 5. Study Areas</strong> </p>
 
+<p align="center"> <img src="gisdata/yosemite/images/yosemite_wildfire_modeling_52_0.png" width="700"> </p>
 
-![png](gisdata/yosemite/images/yosemite_wildfire_modeling_52_0.png)
-​    
 
 ## 3.2 Study Area 1
 
 Study area 1 is located in the south of the Yosemite National Park  (Figure 5). Mean slope is 13.95 degree, mean wind speed is 545.45 foot/min, and mean dead fuel moisture 1 hour is 2.79%. Predominant fuel classes are Timber (litter and understory) with a coverage of 23% and Timber (grass and understory) covering 20% of the study area (to learn more about fuel classes click [here](https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/10-mapstudio/files/fbfmsummaries.htm)). According to the NLCD: USGS National Land Cover Database (Yang et.al.,2018), this area is mainly covered by evergreen forest (80%) and  shrub/scrub (16%) (Figure 6).
 
-<center><strong>Figure 6. Vegetation in Study Area 1</strong></center>
-<img src="gisdata/yosemite/images/sa_1.jpg" width="400" align="center">
+<p align="center"> <strong>Figure 6. Vegetation in Study Area 1</strong> </p>
 
-<center>Source: Google Maps Photos</center>
+<p align="center"> <img src="gisdata/yosemite/images/sa_1.jpg" width="400"> </p>
+<p align="center"> Source: Google Maps Photos</p> <br/>
 
 The goal of the fire simulation in this area is to ascertain if our simulated fire has the same spread as a past fire event called ['South Fork'](https://www.nps.gov/yose/blogs/south-fork-fire-august-14-2017.htm) that occurred in 2017.
 
@@ -618,16 +606,15 @@ As we assume windy and topographically sharp conditions, r.ros module needs the 
 - elevation: raster map containing elevation (m).
 
 We'll use `v.surf.idw` module to derive the `moisture_100h` raster map from vector point (`samplefm100`)  by Inverse Distance Squared Weighting. To calculate `moisture_1h` raster we'll use the flowing expression :
-$$
-moisture{\_}100h = moisture{\_}10h + 1 = moisture{\_}1h + 2 \ (GRASS \ Development \ Team,\ 2021)
-$$
+
+![formula](https://render.githubusercontent.com/render/math?math=moisture{\_}100h = moisture{\_}10h %2B1 \ = moisture{\_}1h %2B2 \ (GRASS Development Team, 2021))
+
 `r.mapcal` module will be run to calculate `moisture_10h` from `moisture_100h` and `moisture_1h` from `moisture_10h`. 
 
-We enter the follwing expression in the `r.mapcal` module to calculate `moisture_live`: 
+We enter the following expression in the `r.mapcal` module to calculate `moisture_live`: 
 
-$$
-LFM = (417.602 × EVI) + 6.7806\ (Myoung, et.al.,2018)
-$$
+<p align="center"> <img src="https://render.githubusercontent.com/render/math?math=LFM = (417.602\times EVI) %2B6.7806 \ (Myoung, et.al.,2018)"> </p>
+
 Where `LFM` is Live Fuel Moisture and `EVI` is Enhanced Vegetation Index. The resulting raster will be rescaled to 0-100 as we need percentage content multiplied by 100.
 
 We'll use the v.surf.idw module to derive the `velocity` raster map from vector point (samplevs) by Inverse Distance Squared Weighting.
@@ -757,12 +744,11 @@ r.spread(flags="s", base_ros='out_dir_ros', max_ros='out_max_ros', \
 
 For visualization purposes, we set null values to `0` and a create color table with the following rules:
 
-$$
-0{\%}\ 50:50:50\\
-60{\%}\ yellow\\
-100{\%}\ red
-$$
-
+<p align="center">
+<strong>0% 50:50:50 <br/>
+60% yellow <br/>
+100% red</strong>
+</p>
 
 ```python
 # set null values
@@ -782,7 +768,6 @@ script.run_command('r.spread', flags='si', base_ros='out_dir_ros', max_ros='out_
                    fuel_moisture='moisture_1h_sa_1', output='spread_8h_s1', lag=240, init_time=240);
 ```
 
-
 ```python
 # set null values
 r.null(map='spread_8h_s1', setnull=0)
@@ -800,7 +785,6 @@ script.run_command('r.spread', flags='si', base_ros='out_dir_ros', max_ros='out_
                    spotting_distance='out_spotting', wind_speed='wind_speed_sa_1', \
                    fuel_moisture='moisture_1h_sa_1', output='spread_12h_s1', lag=240, init_time=480);
 ```
-
 
 ```python
 # set null values
@@ -867,8 +851,6 @@ def reclassRast(rastspread):
 # reclassify spread_12h_s1 to create a lengend bar depicting rate of spread in percentage
 reclassRast('spread_12h_s1')
 ```
-
-
 
 In this case, our visualization output will consist of three frames. Each frame will contain the rate of spread raster for each time lag, a vector indicating the source of the simulation, the vector map of the 'South Fork' fire perimeter, and the corresponding title, legends, scale, and north arrow.
 
@@ -945,12 +927,10 @@ script.run_command('d.legend', flags='s', raster='spread_12h_s1_reclass', \
 d.mon(flags='r');
 ```
 
-<center><strong>Figure 7. Results of Fire Simulation Study Area 1</strong></center>
-
-
 ```python
 Image(filename="gisdata/yosemite/images/sa_1_frame.png")
 ```
+<p align="center"> <strong>Figure 7. Results of Fire Simulation Study Area 1</strong> </p>
 
    ![png](gisdata/yosemite/images/yosemite_wildfire_modeling_79_0.png)
 ​    
@@ -958,15 +938,13 @@ Image(filename="gisdata/yosemite/images/sa_1_frame.png")
 According to the output above, our fire spread is heading towards the 'South Fork' fire perimeter. We also observe that when the rate of spread reaches 12 hours, the simulated fire takes up a half of the past fire polygon with a width of approximately 4 km.
 
 
-
 ## 3.3 Study Area 2
 
-Study area 2 is located in the center-west  of the Yosemite National Park  (Figure 5). Mean slope is 10.87 degree, mean wind speed is 408.02 foot/min, mean dead fuel moisture 1 hour is 2.88%, and area is: 53.90 km^2^. Predominant fuel classes are Timber (litter and understory) with a coverage of 31.28%, Closed timber litter with a cover of 29.91% , and Hardwood litter covering 15.08% of the study area (to learn more about fuel classes click [here](https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/10-mapstudio/files/fbfmsummaries.htm)). According to the NLCD: USGS National Land Cover Database (Yang et.al.,2018), this area is mainly covered by evergreen forest (69%), shrub/scrub (17%), and grassland/herbaceous(12%) (Figure 8).
+Study area 2 is located in the center-west  of the Yosemite National Park  (Figure 5). Mean slope is 10.87 degree, mean wind speed is 408.02 foot/min, mean dead fuel moisture 1 hour is 2.88%, and area is: 53.90 km<sup>2</sup> . Predominant fuel classes are Timber (litter and understory) with a coverage of 31.28%, Closed timber litter with a cover of 29.91% , and Hardwood litter covering 15.08% of the study area (to learn more about fuel classes click [here](https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/10-mapstudio/files/fbfmsummaries.htm)). According to the NLCD: USGS National Land Cover Database (Yang et.al.,2018), this area is mainly covered by evergreen forest (69%), shrub/scrub (17%), and grassland/herbaceous(12%) (Figure 8).
 
-<center><strong>Figure 8. Vegetation in Study Area 2</strong></center>
-<img src="gisdata/yosemite/images/sa_2.jpg" width="400" align="center">
-
-<center>Source: Google Maps Photos</center>
+<p align="center"> <strong>Figure 8. Vegetation in Study Area 2</strong></p>
+<p align="center"> <img src="gisdata/yosemite/images/sa_2.jpg" width="400"> </p>
+<p align="center"> Source: Google Maps Photos </p> <br/>
 
 The goal of the fire simulation in this Region is to determine how wildfire simulation behaves in a small area on a ridgetop. 
 
@@ -1037,7 +1015,6 @@ r.spread(flags="s", base_ros='out_dir_ros', max_ros='out_max_ros', \
     fuel_moisture='moisture_1h_sa_2', output='spread_3h_s2', lag=180);
 ```
 
-
 ```python
 # set null values
 r.null(map='spread_3h_s2', setnull=0)
@@ -1056,7 +1033,6 @@ script.run_command('r.spread', flags='si', base_ros='out_dir_ros', max_ros='out_
                    fuel_moisture='moisture_1h_sa_2', output='spread_6h_s2', lag=180, init_time=180);
 ```
 
-
 ```python
 # set null values
 r.null(map='spread_6h_s2', setnull=0)
@@ -1074,7 +1050,6 @@ script.run_command('r.spread', flags='si', base_ros='out_dir_ros', max_ros='out_
                    spotting_distance='out_spotting', wind_speed='wind_speed_sa_2', \
                    fuel_moisture='moisture_1h_sa_2', output='spread_9h_s2', lag=180, init_time=360);
 ```
-
 
 ```python
 # set null values
@@ -1117,7 +1092,6 @@ Now, we will perform an auto-balancing of colors for the high-resolution image. 
 script.run_command('i.colors.enhance',red='subset.4',green='subset.3', \
   blue='subset.2', strength=95);
 ```
-
 
 ```python
 # combine red, green, and blue raster maps into a single composite raster map to create a CIR composite
@@ -1208,13 +1182,11 @@ script.run_command('d.barscale', bgcolor=('255:255:204'), at=(30,5), style='line
 d.mon(flags='r');
 ```
 
-<center><strong>Figure 9. Results of Fire Simulation Study Area 2</strong></center>
-
-
 ```python
 Image(filename="gisdata/yosemite/images/sa_2_frame.png")
 ```
 
+<p align="center">  <strong>Figure 9. Results of Fire Simulation Study Area 2</strong> </p>
 
 ![png](gisdata/yosemite/images/yosemite_wildfire_modeling_111_0.png)
 ​    
@@ -1228,16 +1200,18 @@ im = Img.open("gisdata/yosemite/images/sa_2_frame.png")
 im.show()
 ```
 
-According to the above output, our fire spread is constrained by the presence of bare soils among vegetation patches. We can also see how our simulation avoids bare soil (light blue patches within fire spread 9 h raster). It is important to highlight that our computations are based on 30m spatial resolution, so it is acceptable that our rate of spread raster maps overlaps some bare soils depicted in the high-resolution image. Total area of fire spread 13.03 km^2^.
+According to the above output, our fire spread is constrained by the presence of bare soils among vegetation patches. We can also see how our simulation avoids bare soil (light blue patches within fire spread 9 h raster). It is important to highlight that our computations are based on 30m spatial resolution, so it is acceptable that our rate of spread raster maps overlaps some bare soils depicted in the high-resolution image. Total area of fire spread 13.03 km<sup>2</sup> .
+
 
 ## 3.4 Study Area 3
 
-Study area 3 is located in the center-east  of the Yosemite National Park  (Figure 5). Mean slope is 14.49 degree, mean wind speed is  467.37 foot/min, mean dead fuel moisture 1 hour is 2.87% and area is: 270.26 km^2^. Predominant fuel classes are Closed timber litter with a coverage of 29.70%, and Timber (grass and understory) covering 21.67% of the study area (to learn more about fuel classes click [here](https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/10-mapstudio/files/fbfmsummaries.htm)). According to the NLCD: USGS National Land Cover Database (Yang et.al.,2018), this area is mainly covered by evergreen forest (51%), shrub/scrub (34%), and grassland/herbaceous(5%) (Figure 8).
-<center><strong>Figure 8. Vegetation Study in Area 3</strong></center>
+Study area 3 is located in the center-east  of the Yosemite National Park  (Figure 5). Mean slope is 14.49 degree, mean wind speed is  467.37 foot/min, mean dead fuel moisture 1 hour is 2.87% and area is: 270.26 km<sup>2</sup> . Predominant fuel classes are Closed timber litter with a coverage of 29.70%, and Timber (grass and understory) covering 21.67% of the study area (to learn more about fuel classes click [here](https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/10-mapstudio/files/fbfmsummaries.htm)). According to the NLCD: USGS National Land Cover Database (Yang et.al.,2018), this area is mainly covered by evergreen forest (51%), shrub/scrub (34%), and grassland/herbaceous (5%) (Figure 8).
 
-<img src="gisdata/yosemite/images/sa_3.jpg" width="500" align="center">
+<p align="center"> <strong>Figure 8. Vegetation Study in Area 3</strong> </p>
 
-<center>Source: Google Maps Photos</center>
+<p align="center"> <img src="gisdata/yosemite/images/sa_3.jpg" width="500"> </p>
+
+<p align="center">Source: Google Maps Photos</p>
 
 The goal of the fire simulation in this Region is to determine how wildfire simulation behaves in a large area surrounded by mountains (valley), and during a long time (32 hours). 
 
@@ -1305,7 +1279,6 @@ r.spread(flags="s", base_ros='out_dir_ros', max_ros='out_max_ros', \
     fuel_moisture='moisture_1h_sa_3', output='spread_8h_s3', lag=480);
 ```
 
-
 ```python
 # set null values
 r.null(map='spread_8h_s3', setnull=0)
@@ -1323,7 +1296,6 @@ script.run_command('r.spread', flags='si', base_ros='out_dir_ros', max_ros='out_
                    spotting_distance='out_spotting', wind_speed='wind_speed_sa_3', \
                    fuel_moisture='moisture_1h_sa_3', output='spread_16h_s3', lag=480, init_time=480);
 ```
-
 
 ```python
 # set null values
@@ -1343,7 +1315,6 @@ script.run_command('r.spread', flags='si', base_ros='out_dir_ros', max_ros='out_
                    fuel_moisture='moisture_1h_sa_3', output='spread_24h_s3', lag=480, init_time=960);
 ```
 
-
 ```python
 # set null values
 r.null(map='spread_24h_s3', setnull=0)
@@ -1361,7 +1332,6 @@ script.run_command('r.spread', flags='si', base_ros='out_dir_ros', max_ros='out_
                    spotting_distance='out_spotting', wind_speed='wind_speed_sa_3', \
                    fuel_moisture='moisture_1h_sa_3', output='spread_32h_s3', lag=480, init_time=1440);
 ```
-
 
 ```python
 # set null values
@@ -1504,13 +1474,11 @@ script.run_command('d.barscale', bgcolor=('255:255:204'), at=(30,8), style='line
 # release and stop currently selected monitor and exit
 d.mon(flags='r');
 ```
-
-<center><strong>Figure 10. Results of Fire Simulation Study Area 3</strong></center>
-
 ```python
 Image(filename="gisdata/yosemite/images/sa_3_frame.png")
 ```
 
+<p align="center"> <strong>Figure 10. Results of Fire Simulation Study Area 3</strong> </p>
 
 ![png](gisdata/yosemite/images/yosemite_wildfire_modeling_142_0.png)
 ​    
@@ -1564,7 +1532,6 @@ for i in lags:
     d.mon(flags='r');
 ```
 
-
 ```python
 # open resulting images with PIL
 im0 = Img.open("gisdata/yosemite/images/sa_3_0h.png")
@@ -1576,7 +1543,6 @@ im4 = Img.open("gisdata/yosemite/images/sa_3_32h.png")
 images = [im0, im1,im2,im3, im4]
 ```
 
-
 ```python
 # create the animated gif with GRASS Python imaging package
 imaging.images2gif.writeGifPillow('gisdata/yosemite/images/Animation_Sa_3_2.gif', \
@@ -1585,7 +1551,7 @@ imaging.images2gif.writeGifPillow('gisdata/yosemite/images/Animation_Sa_3_2.gif'
 
 <img src="gisdata/yosemite/images/Animation_Sa_3_2.gif" width="400" align="center">
 
-According to the above output, our simulated fire spreads out towards the Yosemite valley generating a mega-fire. We can also see how our simulation avoids non-vegetated areas and goes over roads possibly due to the spotting effect. Total area of fire spread 72.54 km^2^.
+According to the above output, our simulated fire spreads out towards the Yosemite valley generating a mega-fire. We can also see how our simulation avoids non-vegetated areas and goes over roads possibly due to the spotting effect. Total area of fire spread 72.54 km<sup>2</sup> .
 
 
 ```python
