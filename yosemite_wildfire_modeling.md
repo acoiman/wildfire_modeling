@@ -32,7 +32,7 @@ Getting the data we need to feed our models could be a daunting activity. Someti
 
 ## 1.1 Loading Packages
 
-This tutorial assumes you are working in a [Juyter Notebook](https://jupyter.org/) and a [Python](https://www.python.org/) environment with all the required packages. You also need to install the latest version of [GRASS GIS](https://grass.osgeo.org/) and have an active [GEE](https://earthengine.google.com/) account. Our Python environment is based on an [Anaconda](https://www.anaconda.com/) installation on Ubuntu 20.04, see details [here](https://docs.anaconda.com/anaconda/install/linux/).  You need to install the following packages that are not contained in Anaconda: **Geopandas, GEE Python API, eeconvert, geemap**. Installing these packages is beyond the scope of this tutorial, so Google them to find out how to install and configure these packages.  
+This tutorial assumes you are working in a [Jupyter Notebook](https://jupyter.org/) and a [Python](https://www.python.org/) environment with all the required packages. You also need to install the latest version of [GRASS GIS](https://grass.osgeo.org/) and have an active [GEE](https://earthengine.google.com/) account. Our Python environment is based on an [Anaconda](https://www.anaconda.com/) installation on Ubuntu 20.04, see details [here](https://docs.anaconda.com/anaconda/install/linux/).  You need to install the following packages that are not contained in Anaconda: **Geopandas, GEE Python API, eeconvert, geemap**. Installing these packages is beyond the scope of this tutorial, so Google them to find out how to install and configure these packages.  
 
 Let's load all Python packages needed for this tutorial.
 
@@ -607,7 +607,7 @@ As we assume windy and topographically sharp conditions, r.ros module needs the 
 
 We'll use `v.surf.idw` module to derive the `moisture_100h` raster map from vector point (`samplefm100`)  by Inverse Distance Squared Weighting. To calculate `moisture_1h` raster we'll use the flowing expression :
 
-<p align="center"> <img src="https://render.githubusercontent.com/render/math?math=moisture{\_}100h \= moisture{\_}10h %2B1 \ = moisture{\_}1h %2B2 \ (GRASS Development Team, 2021))"> </p>
+<p align="center"> <img src="https://render.githubusercontent.com/render/math?math=moisture{\_}100h \= moisture{\_}10h %2B1 \ = moisture{\_}1h %2B2 \ (GRASS \Development \Team, 2021)"> </p>
 
 `r.mapcal` module will be run to calculate `moisture_10h` from `moisture_100h` and `moisture_1h` from `moisture_10h`. 
 
