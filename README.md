@@ -6,7 +6,7 @@ In this tutorial, we will show you how to model wildfire events using the [r.ros
 
 ## How to start
 
-We assume you have a running installation of  [GRASS GIS](https://grass.osgeo.org/)  and  [Anaconda](https://www.anaconda.com/) including the latest version [Jupyter Notebook](https://jupyter.org/) on Ubuntu 20.04. You also need an active [Google Earth Engine (GEE)](https://earthengine.google.com/) account. 
+We assume you have a running installation of  [GRASS GIS](https://grass.osgeo.org/)  and  [Anaconda](https://www.anaconda.com/) including the latest version of [Jupyter Notebook](https://jupyter.org/) on Ubuntu 20.04. You also need an active [Google Earth Engine (GEE)](https://earthengine.google.com/) account. 
 
 Use the following commands to create a conda environment, activate it, and install packages required for this tutorial.
 
