@@ -1,4 +1,4 @@
-[![GitHub issues](https://img.shields.io/github/issues/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/issues)[![GitHub forks](https://img.shields.io/github/forks/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/network)[![GitHub stars](https://img.shields.io/github/stars/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/issues)  [![GitHub forks](https://img.shields.io/github/forks/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/network)  [![GitHub stars](https://img.shields.io/github/stars/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/stargazers)
 
 # ![fire](https://github.githubassets.com/images/icons/emoji/unicode/1f525.png) ​Wildfire Modeling in Yosemite National Park
 
