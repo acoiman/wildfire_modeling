@@ -1,6 +1,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/issues)  [![GitHub forks](https://img.shields.io/github/forks/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/network)  [![GitHub stars](https://img.shields.io/github/stars/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/stargazers)
+<a href="${YOUR_URL}">
+  <img height="32" src=https://raw.githubusercontent.com/everdrone/coolbadge/master/badges/Paypal/Coffee/Dark/Short.png />
+</a>
 
-<a href="https://www.paypal.me/facelessuser"><img src="/readmes/img/81163c59d25ea57ae79bb519342bf79a4c4abe00.svg" alt="Donate via PayPal"></a>
 
 # ![fire](https://github.githubassets.com/images/icons/emoji/unicode/1f525.png) ​Wildfire Modeling in Yosemite National Park
 
