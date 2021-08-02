@@ -1,4 +1,5 @@
 [![GitHub issues](https://img.shields.io/github/issues/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/issues)  [![GitHub forks](https://img.shields.io/github/forks/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/network)  [![GitHub stars](https://img.shields.io/github/stars/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/stargazers)
+<a href="https://buymeacoffee.com/balupton" title="Donate to this project using Buy Me A Coffee"><img src="https://img.shields.io/badge/%20buy%20me%20a%20cofee-donate-green" alt="Buy Me A Coffee donate button"></a>
 
 
 
