@@ -1,5 +1,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/issues)  [![GitHub forks](https://img.shields.io/github/forks/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/network)  [![GitHub stars](https://img.shields.io/github/stars/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/stargazers)
 
+<a href="https://www.paypal.me/facelessuser"><img src="/readmes/img/81163c59d25ea57ae79bb519342bf79a4c4abe00.svg" alt="Donate via PayPal"></a>
+
 # ![fire](https://github.githubassets.com/images/icons/emoji/unicode/1f525.png) ​Wildfire Modeling in Yosemite National Park
 
 In this tutorial, we will show you how to model wildfire events using the [r.ros](https://grass.osgeo.org/grass78/manuals/r.ros.html) and [r.spread](https://grass.osgeo.org/grass78/manuals/r.spread.html) modules of  [GRASS GIS](https://grass.osgeo.org/). We will perform fire simulations in three areas in the [Yosemite National Park](https://www.nps.gov/yose/index.htm) , California USA  during the summer season in 2020 (`from 2020-06-20 through 2020-09-22`). 
