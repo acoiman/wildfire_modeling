@@ -1,7 +1,5 @@
 [![GitHub issues](https://img.shields.io/github/issues/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/issues)  [![GitHub forks](https://img.shields.io/github/forks/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/network)  [![GitHub stars](https://img.shields.io/github/stars/acoiman/wildfire_modeling)](https://github.com/acoiman/wildfire_modeling/stargazers)
-<a href="${YOUR_URL}">
-  <img height="32" src=https://raw.githubusercontent.com/everdrone/coolbadge/master/badges/Paypal/Coffee/Dark/Short.png />
-</a>
+
 
 
 # ![fire](https://github.githubassets.com/images/icons/emoji/unicode/1f525.png) ​Wildfire Modeling in Yosemite National Park
@@ -43,3 +41,7 @@ Enjoy the tutorial!!
 ## License
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+
+<a href="${YOUR_URL}">
+  <img height="32" src=https://raw.githubusercontent.com/everdrone/coolbadge/master/badges/Paypal/Coffee/Dark/Short.png />
+</a>
